@@ -10,7 +10,6 @@ const Hero = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We\'ll get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
@@ -25,15 +24,14 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500">
-      {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-black bg-opacity-40"
-        style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay'
-        }}
+        className="absolute inset-0"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1920')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
       ></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
@@ -53,21 +51,21 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <div className="bg-white bg-opacity-20 rounded-lg p-4 mb-2">
-                  <Users className="h-8 w-8 mx-auto text-yellow-200" />
+                  <Users className="h-8 w-8 mx-auto text-yellow-500" />
                 </div>
                 <div className="text-2xl font-bold">10K+</div>
                 <div className="text-sm text-yellow-200">Active Users</div>
               </div>
               <div className="text-center">
                 <div className="bg-white bg-opacity-20 rounded-lg p-4 mb-2">
-                  <Trophy className="h-8 w-8 mx-auto text-yellow-200" />
+                  <Trophy className="h-8 w-8 mx-auto text-yellow-500" />
                 </div>
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm text-yellow-200">Challenges</div>
               </div>
               <div className="text-center">
                 <div className="bg-white bg-opacity-20 rounded-lg p-4 mb-2">
-                  <Target className="h-8 w-8 mx-auto text-yellow-200" />
+                  <Target className="h-8 w-8 mx-auto text-yellow-500" />
                 </div>
                 <div className="text-2xl font-bold">50K+</div>
                 <div className="text-sm text-yellow-200">Goals Achieved</div>

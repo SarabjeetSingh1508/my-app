@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Search, Zap } from 'lucide-react';
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/clerk-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Search Bar */}
+          {/* Search Bar
           <div className="hidden md:flex items-center">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -54,7 +55,7 @@ const Navbar = () => {
                 className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
@@ -66,9 +67,7 @@ const Navbar = () => {
         <UserButton />
       </SignedIn>
             </button>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150">
-              Sign Up
-            </button>
+            
           </div>
 
           {/* Mobile menu button */}
