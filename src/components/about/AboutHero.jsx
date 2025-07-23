@@ -29,19 +29,19 @@ const AboutHero = () => {
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-white bg-opacity-20 rounded-lg p-6">
-              <Target className="h-12 w-12 mx-auto text-yellow-200 mb-4" />
+              <Target className="h-12 w-12 mx-auto text-yellow-500 mb-4" />
               <div className="text-3xl font-bold mb-2">50M+</div>
-              <div className="text-yellow-200">Challenges Completed</div>
+              <div className="text-yellow-500">Challenges Completed</div>
             </div>
             <div className="bg-white bg-opacity-20 rounded-lg p-6">
-              <Users className="h-12 w-12 mx-auto text-yellow-200 mb-4" />
+              <Users className="h-12 w-12 mx-auto text-yellow-500 mb-4" />
               <div className="text-3xl font-bold mb-2">1M+</div>
-              <div className="text-yellow-200">Active Community</div>
+              <div className="text-yellow-500">Active Community</div>
             </div>
             <div className="bg-white bg-opacity-20 rounded-lg p-6">
-              <Heart className="h-12 w-12 mx-auto text-yellow-200 mb-4" />
+              <Heart className="h-12 w-12 mx-auto text-yellow-500 mb-4" />
               <div className="text-3xl font-bold mb-2">98%</div>
-              <div className="text-yellow-200">User Satisfaction</div>
+              <div className="text-yellow-500">User Satisfaction</div>
             </div>
           </div>
         </div>
